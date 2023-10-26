@@ -1,0 +1,20 @@
+{
+  "appName": "كوكب الوجبات",
+  "landingPageTopText": "جميع خطط الوجبات الخاصة بك في مكان واحد",
+  "landingPageBottomText": "اكتشف، اشترك، إدارة",
+   "enter_first_name": "Please enter first name",
+    "enter_last_name": "Please enter last name",
+    "update_password": "Update password",
+    "update_password_subtitle": "Minimum 8 characters, must include numbers or symbols",
+    "re_enter_password": "Re-enter your password",
+    "weak_password": "Password strength: Weak",
+    "password_length_validator": "Need at least 8 characters",
+    "password_string_validator": "Need at least 1 number or symbol",
+    "password_must_be_same": "Password must be same",
+    "field_must_not_be_empty": "Field must not be empty",
+    "please_enter_email": "Please enter Email address",
+    "please_enter_password": "Please enter password",
+    "invalid_email_address": "Invalid email address",
+    "invalid_password": "Invalid Password"
+
+}

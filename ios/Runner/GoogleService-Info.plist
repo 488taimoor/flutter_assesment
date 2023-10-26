@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>100784575969-95o1nblrhbig3n3rd9fkjnsf6am2cm54.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.100784575969-95o1nblrhbig3n3rd9fkjnsf6am2cm54</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>100784575969-9m5tesohe0gibigrv4snale7g2988s1i.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBCYeUU6YEn7HMNmIU7-c_t7vGtjEw4iso</string>
+	<key>GCM_SENDER_ID</key>
+	<string>100784575969</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mealplanet.mobile.staging</string>
+	<key>PROJECT_ID</key>
+	<string>mealplanet-8d459</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mealplanet-8d459.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:100784575969:ios:6719c51e1479f6d272eea0</string>
+</dict>
+</plist>

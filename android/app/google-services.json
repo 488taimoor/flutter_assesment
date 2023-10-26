@@ -1,0 +1,134 @@
+{
+  "project_info": {
+    "project_number": "100784575969",
+    "project_id": "mealplanet-8d459",
+    "storage_bucket": "mealplanet-8d459.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100784575969:android:3c2310f93dd2ee0772eea0",
+        "android_client_info": {
+          "package_name": "com.mealplanet.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100784575969-jfogo2632jtba0hrgenmj5vud1qibauk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMvqnOzQ_9W_WBlfh94E_a6IjvPkLaWiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100784575969-gu8gdorjc80p6ds2fumo535s9esf814h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "100784575969-2qq80pcckqu4vtton09bveqip6ir0igp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mealPlanet"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100784575969:android:4947f391bb43536e72eea0",
+        "android_client_info": {
+          "package_name": "com.mealplanet.mobile.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100784575969-9m5tesohe0gibigrv4snale7g2988s1i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mealplanet.mobile.dev",
+            "certificate_hash": "dd09e277d871f9cefbfce939f532a0a94f86bf0c"
+          }
+        },
+        {
+          "client_id": "100784575969-jfogo2632jtba0hrgenmj5vud1qibauk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMvqnOzQ_9W_WBlfh94E_a6IjvPkLaWiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100784575969-gu8gdorjc80p6ds2fumo535s9esf814h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "100784575969-2qq80pcckqu4vtton09bveqip6ir0igp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mealPlanet"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100784575969:android:0654c93e18031b7d72eea0",
+        "android_client_info": {
+          "package_name": "com.mealplanet.mobile.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100784575969-g273g1geq0s49asnh7a41c9qv7qrtjdv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mealplanet.mobile.staging",
+            "certificate_hash": "b176f74487e74b1b9bfa8578b667a32f0190c70a"
+          }
+        },
+        {
+          "client_id": "100784575969-jfogo2632jtba0hrgenmj5vud1qibauk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMvqnOzQ_9W_WBlfh94E_a6IjvPkLaWiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100784575969-gu8gdorjc80p6ds2fumo535s9esf814h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "100784575969-2qq80pcckqu4vtton09bveqip6ir0igp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mealPlanet"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
