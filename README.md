@@ -3,7 +3,7 @@
 First, thank you! for giving me this opportunity. I just completed the coding challenge. First, I want to show you a Demo 😊
 
 ##Demo:
-![alt text](https://user-images.githubusercontent.com/47168796/278244570-24842707-ee18-4dce-85ca-f17de94711dc.mp4)
+![Watch the video](https://user-images.githubusercontent.com/47168796/278244570-24842707-ee18-4dce-85ca-f17de94711dc.mp4)]
 
 Following are the steps to run the project and I also explained deeply what things I used in the project.
 
