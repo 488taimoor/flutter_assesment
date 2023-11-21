@@ -1,4 +1,4 @@
-# Deliveristo Flutter Frontend Coding Challenge
+# TenTwenty Flutter Frontend Coding Challenge
 
 First, thank you! for giving me this opportunity. I just completed the coding challenge. First, I want to show you a Demo 😊
 
