@@ -10,6 +10,7 @@ import 'package:mobile/core/resources/resources.dart';
 import 'package:mobile/core/resources/strings.dart';
 import 'package:mobile/constants/res.dart';
 import 'package:mobile/features/main/presentation/screens/home/presentation/cubit/home_screen_cubit.dart';
+import 'package:mobile/features/main/presentation/screens/main_screen.dart';
 import 'package:mobile/l10n/app_localizations_extension.dart';
 
 class MealPlanetApp extends StatefulWidget {
@@ -58,12 +59,14 @@ class _MealPlanetAppState extends State<MealPlanetApp> {
         BlocProvider<ThemeCubit>(lazy: true, create: (_) => Injector.resolve()),
         BlocProvider<HomeScreenCubit>(
             lazy: true, create: (_) => Injector.resolve()),
+    BlocProvider<NavBarCubit>(
+        lazy: true, create: (_) => Injector.resolve()),
       ];
 
   Future<void> setSystemPreferences() async {
     await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-      statusBarColor: AppColors.primaryColor,
+      statusBarColor: AppColors.textColorWhite,
       statusBarIconBrightness: Brightness.dark,
       systemNavigationBarColor: AppColors.primaryColor,
       systemNavigationBarIconBrightness: Brightness.dark,

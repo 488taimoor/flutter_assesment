@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
-  static Color primaryColor = const Color(0xff1f4883);
-  static Color accentColor = const Color(0xff0086FF);
+  static Color primaryColor = const Color(0xff2E2739);
+  static Color accentColor = const Color(0xff5d4b7a);
   static Color blackColor = Colors.black;
-  static Color secondaryColor =  const Color(0xff1f4883);
+  static Color secondaryColor =  const Color(0xff2E2739);
 
 
   // Theme Colors
@@ -25,8 +25,9 @@ class AppColors {
   static Color textGreyColor = lightGrayColor;
   static Color successColor = primaryColor;
   static Color errorColor = const Color(0xffB3261E);
-  static const lightGrayColor = Color(0xFF636363);
+  static const lightGrayColor = Color(0xFFA1A0A0);
   static Color shimmerBaseColor = const Color(0xffF1EFEF);
   static Color shimmerHighlightColor = const Color(0xffE7E5E5);
+  static Color headingColor = const Color(0xff202C43);
 
 }

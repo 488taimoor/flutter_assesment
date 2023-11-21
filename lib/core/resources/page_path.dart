@@ -3,8 +3,8 @@ class PagePath {
 
   static const splash = '/';
   static const noInternetConnection = '/noInternetConnection';
-  static const home = '/home';
-  static const myPlans = '/myPlans';
-  static const wellness = '/wellness';
-  static const profile = '/profile';
+  static const dashboard = '/dashboard';
+  static const watch = '/watch';
+  static const library = '/library';
+  static const more = '/more';
 }

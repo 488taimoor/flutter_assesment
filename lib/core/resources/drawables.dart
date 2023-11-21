@@ -5,7 +5,8 @@ class Drawables {
   /// Icon assets
   /// **
 
-  // static const backImage = 'assets/svgs/backImage.svg';
+
+  static const dashboard_nav = 'assets/svgs/dashboard_nav.svg';
 
 
   /// *

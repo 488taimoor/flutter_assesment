@@ -11,28 +11,12 @@ class HomeScreenCubit extends Cubit<HomeScreenStates> {
   }) : super(const HomeScreenStates.initial());
   final HomeRepository repository;
 
-  String breedName = "";
-
-
-  void getRandomImageByBreed() async {
+  void getUpcomingMovies() async {
     emit(const HomeScreenStates.loading());
     try {
-      final response = await repository.getBreedByRandom();
-      breedName = response.message.split("/")[4].split("-")[0];
+      final response = await repository.getUpcommingMovies();
       emit(
-        HomeScreenStates.onRandomBreed(response),
-      );
-    } on DioException catch (e) {
-      emit(HomeScreenStates.onError(e.message.toString()));
-    }
-  }
-
-  void getBreedList(String breed_name) async {
-    emit(const HomeScreenStates.loading());
-    try {
-      final response = await repository.getListByBreed(breed_name);
-      emit(
-        HomeScreenStates.onBreedList(response),
+        HomeScreenStates.onResponse(response),
       );
     } on DioException catch (e) {
       emit(HomeScreenStates.onError(e.message.toString()));

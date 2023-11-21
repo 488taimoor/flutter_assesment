@@ -19,48 +19,25 @@ class _RestAPIClient implements RestAPIClient {
   String? baseUrl;
 
   @override
-  Future<RandomResponse> getBreedByRandom() async {
+  Future<UpcomingMoviesResponse> getAllUpcomingMovies(apiKey) async {
     const _extra = <String, dynamic>{};
-    final queryParameters = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{r'api_key': apiKey};
     final _headers = <String, dynamic>{};
     final Map<String, dynamic>? _data = null;
-    final _result = await _dio
-        .fetch<Map<String, dynamic>>(_setStreamType<RandomResponse>(Options(
+    final _result = await _dio.fetch<Map<String, dynamic>>(
+        _setStreamType<UpcomingMoviesResponse>(Options(
       method: 'GET',
       headers: _headers,
       extra: _extra,
     )
             .compose(
               _dio.options,
-              '/breeds/image/random',
+              '/3/movie/upcoming',
               queryParameters: queryParameters,
               data: _data,
             )
             .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
-    final value = RandomResponse.fromJson(_result.data!);
-    return value;
-  }
-
-  @override
-  Future<BreedResponse> getListByBreed(breed_name) async {
-    const _extra = <String, dynamic>{};
-    final queryParameters = <String, dynamic>{};
-    final _headers = <String, dynamic>{};
-    final Map<String, dynamic>? _data = null;
-    final _result = await _dio
-        .fetch<Map<String, dynamic>>(_setStreamType<BreedResponse>(Options(
-      method: 'GET',
-      headers: _headers,
-      extra: _extra,
-    )
-            .compose(
-              _dio.options,
-              '/breed/${breed_name}/images',
-              queryParameters: queryParameters,
-              data: _data,
-            )
-            .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
-    final value = BreedResponse.fromJson(_result.data!);
+    final value = UpcomingMoviesResponse.fromJson(_result.data!);
     return value;
   }
 

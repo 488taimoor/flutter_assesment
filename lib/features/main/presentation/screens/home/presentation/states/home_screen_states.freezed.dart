@@ -21,8 +21,8 @@ mixin _$HomeScreenStates {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(String? error) onError,
-    required TResult Function(RandomResponse randomResponse) onRandomBreed,
-    required TResult Function(BreedResponse breedResponse) onBreedList,
+    required TResult Function(UpcomingMoviesResponse upcomingMoviesResponse)
+        onResponse,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -30,8 +30,8 @@ mixin _$HomeScreenStates {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(String? error)? onError,
-    TResult? Function(RandomResponse randomResponse)? onRandomBreed,
-    TResult? Function(BreedResponse breedResponse)? onBreedList,
+    TResult? Function(UpcomingMoviesResponse upcomingMoviesResponse)?
+        onResponse,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -39,8 +39,7 @@ mixin _$HomeScreenStates {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String? error)? onError,
-    TResult Function(RandomResponse randomResponse)? onRandomBreed,
-    TResult Function(BreedResponse breedResponse)? onBreedList,
+    TResult Function(UpcomingMoviesResponse upcomingMoviesResponse)? onResponse,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -49,8 +48,7 @@ mixin _$HomeScreenStates {
     required TResult Function(initial value) initial,
     required TResult Function(showloading value) loading,
     required TResult Function(showError value) onError,
-    required TResult Function(RandomBreed value) onRandomBreed,
-    required TResult Function(BreedList value) onBreedList,
+    required TResult Function(onResponse value) onResponse,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -58,8 +56,7 @@ mixin _$HomeScreenStates {
     TResult? Function(initial value)? initial,
     TResult? Function(showloading value)? loading,
     TResult? Function(showError value)? onError,
-    TResult? Function(RandomBreed value)? onRandomBreed,
-    TResult? Function(BreedList value)? onBreedList,
+    TResult? Function(onResponse value)? onResponse,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -67,8 +64,7 @@ mixin _$HomeScreenStates {
     TResult Function(initial value)? initial,
     TResult Function(showloading value)? loading,
     TResult Function(showError value)? onError,
-    TResult Function(RandomBreed value)? onRandomBreed,
-    TResult Function(BreedList value)? onBreedList,
+    TResult Function(onResponse value)? onResponse,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -133,8 +129,8 @@ class _$initialImpl implements initial {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(String? error) onError,
-    required TResult Function(RandomResponse randomResponse) onRandomBreed,
-    required TResult Function(BreedResponse breedResponse) onBreedList,
+    required TResult Function(UpcomingMoviesResponse upcomingMoviesResponse)
+        onResponse,
   }) {
     return initial();
   }
@@ -145,8 +141,8 @@ class _$initialImpl implements initial {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(String? error)? onError,
-    TResult? Function(RandomResponse randomResponse)? onRandomBreed,
-    TResult? Function(BreedResponse breedResponse)? onBreedList,
+    TResult? Function(UpcomingMoviesResponse upcomingMoviesResponse)?
+        onResponse,
   }) {
     return initial?.call();
   }
@@ -157,8 +153,7 @@ class _$initialImpl implements initial {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String? error)? onError,
-    TResult Function(RandomResponse randomResponse)? onRandomBreed,
-    TResult Function(BreedResponse breedResponse)? onBreedList,
+    TResult Function(UpcomingMoviesResponse upcomingMoviesResponse)? onResponse,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -173,8 +168,7 @@ class _$initialImpl implements initial {
     required TResult Function(initial value) initial,
     required TResult Function(showloading value) loading,
     required TResult Function(showError value) onError,
-    required TResult Function(RandomBreed value) onRandomBreed,
-    required TResult Function(BreedList value) onBreedList,
+    required TResult Function(onResponse value) onResponse,
   }) {
     return initial(this);
   }
@@ -185,8 +179,7 @@ class _$initialImpl implements initial {
     TResult? Function(initial value)? initial,
     TResult? Function(showloading value)? loading,
     TResult? Function(showError value)? onError,
-    TResult? Function(RandomBreed value)? onRandomBreed,
-    TResult? Function(BreedList value)? onBreedList,
+    TResult? Function(onResponse value)? onResponse,
   }) {
     return initial?.call(this);
   }
@@ -197,8 +190,7 @@ class _$initialImpl implements initial {
     TResult Function(initial value)? initial,
     TResult Function(showloading value)? loading,
     TResult Function(showError value)? onError,
-    TResult Function(RandomBreed value)? onRandomBreed,
-    TResult Function(BreedList value)? onBreedList,
+    TResult Function(onResponse value)? onResponse,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -253,8 +245,8 @@ class _$showloadingImpl implements showloading {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(String? error) onError,
-    required TResult Function(RandomResponse randomResponse) onRandomBreed,
-    required TResult Function(BreedResponse breedResponse) onBreedList,
+    required TResult Function(UpcomingMoviesResponse upcomingMoviesResponse)
+        onResponse,
   }) {
     return loading();
   }
@@ -265,8 +257,8 @@ class _$showloadingImpl implements showloading {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(String? error)? onError,
-    TResult? Function(RandomResponse randomResponse)? onRandomBreed,
-    TResult? Function(BreedResponse breedResponse)? onBreedList,
+    TResult? Function(UpcomingMoviesResponse upcomingMoviesResponse)?
+        onResponse,
   }) {
     return loading?.call();
   }
@@ -277,8 +269,7 @@ class _$showloadingImpl implements showloading {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String? error)? onError,
-    TResult Function(RandomResponse randomResponse)? onRandomBreed,
-    TResult Function(BreedResponse breedResponse)? onBreedList,
+    TResult Function(UpcomingMoviesResponse upcomingMoviesResponse)? onResponse,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -293,8 +284,7 @@ class _$showloadingImpl implements showloading {
     required TResult Function(initial value) initial,
     required TResult Function(showloading value) loading,
     required TResult Function(showError value) onError,
-    required TResult Function(RandomBreed value) onRandomBreed,
-    required TResult Function(BreedList value) onBreedList,
+    required TResult Function(onResponse value) onResponse,
   }) {
     return loading(this);
   }
@@ -305,8 +295,7 @@ class _$showloadingImpl implements showloading {
     TResult? Function(initial value)? initial,
     TResult? Function(showloading value)? loading,
     TResult? Function(showError value)? onError,
-    TResult? Function(RandomBreed value)? onRandomBreed,
-    TResult? Function(BreedList value)? onBreedList,
+    TResult? Function(onResponse value)? onResponse,
   }) {
     return loading?.call(this);
   }
@@ -317,8 +306,7 @@ class _$showloadingImpl implements showloading {
     TResult Function(initial value)? initial,
     TResult Function(showloading value)? loading,
     TResult Function(showError value)? onError,
-    TResult Function(RandomBreed value)? onRandomBreed,
-    TResult Function(BreedList value)? onBreedList,
+    TResult Function(onResponse value)? onResponse,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -399,8 +387,8 @@ class _$showErrorImpl implements showError {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(String? error) onError,
-    required TResult Function(RandomResponse randomResponse) onRandomBreed,
-    required TResult Function(BreedResponse breedResponse) onBreedList,
+    required TResult Function(UpcomingMoviesResponse upcomingMoviesResponse)
+        onResponse,
   }) {
     return onError(error);
   }
@@ -411,8 +399,8 @@ class _$showErrorImpl implements showError {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(String? error)? onError,
-    TResult? Function(RandomResponse randomResponse)? onRandomBreed,
-    TResult? Function(BreedResponse breedResponse)? onBreedList,
+    TResult? Function(UpcomingMoviesResponse upcomingMoviesResponse)?
+        onResponse,
   }) {
     return onError?.call(error);
   }
@@ -423,8 +411,7 @@ class _$showErrorImpl implements showError {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String? error)? onError,
-    TResult Function(RandomResponse randomResponse)? onRandomBreed,
-    TResult Function(BreedResponse breedResponse)? onBreedList,
+    TResult Function(UpcomingMoviesResponse upcomingMoviesResponse)? onResponse,
     required TResult orElse(),
   }) {
     if (onError != null) {
@@ -439,8 +426,7 @@ class _$showErrorImpl implements showError {
     required TResult Function(initial value) initial,
     required TResult Function(showloading value) loading,
     required TResult Function(showError value) onError,
-    required TResult Function(RandomBreed value) onRandomBreed,
-    required TResult Function(BreedList value) onBreedList,
+    required TResult Function(onResponse value) onResponse,
   }) {
     return onError(this);
   }
@@ -451,8 +437,7 @@ class _$showErrorImpl implements showError {
     TResult? Function(initial value)? initial,
     TResult? Function(showloading value)? loading,
     TResult? Function(showError value)? onError,
-    TResult? Function(RandomBreed value)? onRandomBreed,
-    TResult? Function(BreedList value)? onBreedList,
+    TResult? Function(onResponse value)? onResponse,
   }) {
     return onError?.call(this);
   }
@@ -463,8 +448,7 @@ class _$showErrorImpl implements showError {
     TResult Function(initial value)? initial,
     TResult Function(showloading value)? loading,
     TResult Function(showError value)? onError,
-    TResult Function(RandomBreed value)? onRandomBreed,
-    TResult Function(BreedList value)? onBreedList,
+    TResult Function(onResponse value)? onResponse,
     required TResult orElse(),
   }) {
     if (onError != null) {
@@ -484,66 +468,66 @@ abstract class showError implements HomeScreenStates {
 }
 
 /// @nodoc
-abstract class _$$RandomBreedImplCopyWith<$Res> {
-  factory _$$RandomBreedImplCopyWith(
-          _$RandomBreedImpl value, $Res Function(_$RandomBreedImpl) then) =
-      __$$RandomBreedImplCopyWithImpl<$Res>;
+abstract class _$$onResponseImplCopyWith<$Res> {
+  factory _$$onResponseImplCopyWith(
+          _$onResponseImpl value, $Res Function(_$onResponseImpl) then) =
+      __$$onResponseImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({RandomResponse randomResponse});
+  $Res call({UpcomingMoviesResponse upcomingMoviesResponse});
 }
 
 /// @nodoc
-class __$$RandomBreedImplCopyWithImpl<$Res>
-    extends _$HomeScreenStatesCopyWithImpl<$Res, _$RandomBreedImpl>
-    implements _$$RandomBreedImplCopyWith<$Res> {
-  __$$RandomBreedImplCopyWithImpl(
-      _$RandomBreedImpl _value, $Res Function(_$RandomBreedImpl) _then)
+class __$$onResponseImplCopyWithImpl<$Res>
+    extends _$HomeScreenStatesCopyWithImpl<$Res, _$onResponseImpl>
+    implements _$$onResponseImplCopyWith<$Res> {
+  __$$onResponseImplCopyWithImpl(
+      _$onResponseImpl _value, $Res Function(_$onResponseImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? randomResponse = null,
+    Object? upcomingMoviesResponse = null,
   }) {
-    return _then(_$RandomBreedImpl(
-      null == randomResponse
-          ? _value.randomResponse
-          : randomResponse // ignore: cast_nullable_to_non_nullable
-              as RandomResponse,
+    return _then(_$onResponseImpl(
+      null == upcomingMoviesResponse
+          ? _value.upcomingMoviesResponse
+          : upcomingMoviesResponse // ignore: cast_nullable_to_non_nullable
+              as UpcomingMoviesResponse,
     ));
   }
 }
 
 /// @nodoc
 
-class _$RandomBreedImpl implements RandomBreed {
-  const _$RandomBreedImpl(this.randomResponse);
+class _$onResponseImpl implements onResponse {
+  const _$onResponseImpl(this.upcomingMoviesResponse);
 
   @override
-  final RandomResponse randomResponse;
+  final UpcomingMoviesResponse upcomingMoviesResponse;
 
   @override
   String toString() {
-    return 'HomeScreenStates.onRandomBreed(randomResponse: $randomResponse)';
+    return 'HomeScreenStates.onResponse(upcomingMoviesResponse: $upcomingMoviesResponse)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$RandomBreedImpl &&
-            (identical(other.randomResponse, randomResponse) ||
-                other.randomResponse == randomResponse));
+            other is _$onResponseImpl &&
+            (identical(other.upcomingMoviesResponse, upcomingMoviesResponse) ||
+                other.upcomingMoviesResponse == upcomingMoviesResponse));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, randomResponse);
+  int get hashCode => Object.hash(runtimeType, upcomingMoviesResponse);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$RandomBreedImplCopyWith<_$RandomBreedImpl> get copyWith =>
-      __$$RandomBreedImplCopyWithImpl<_$RandomBreedImpl>(this, _$identity);
+  _$$onResponseImplCopyWith<_$onResponseImpl> get copyWith =>
+      __$$onResponseImplCopyWithImpl<_$onResponseImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -551,10 +535,10 @@ class _$RandomBreedImpl implements RandomBreed {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(String? error) onError,
-    required TResult Function(RandomResponse randomResponse) onRandomBreed,
-    required TResult Function(BreedResponse breedResponse) onBreedList,
+    required TResult Function(UpcomingMoviesResponse upcomingMoviesResponse)
+        onResponse,
   }) {
-    return onRandomBreed(randomResponse);
+    return onResponse(upcomingMoviesResponse);
   }
 
   @override
@@ -563,10 +547,10 @@ class _$RandomBreedImpl implements RandomBreed {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(String? error)? onError,
-    TResult? Function(RandomResponse randomResponse)? onRandomBreed,
-    TResult? Function(BreedResponse breedResponse)? onBreedList,
+    TResult? Function(UpcomingMoviesResponse upcomingMoviesResponse)?
+        onResponse,
   }) {
-    return onRandomBreed?.call(randomResponse);
+    return onResponse?.call(upcomingMoviesResponse);
   }
 
   @override
@@ -575,12 +559,11 @@ class _$RandomBreedImpl implements RandomBreed {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String? error)? onError,
-    TResult Function(RandomResponse randomResponse)? onRandomBreed,
-    TResult Function(BreedResponse breedResponse)? onBreedList,
+    TResult Function(UpcomingMoviesResponse upcomingMoviesResponse)? onResponse,
     required TResult orElse(),
   }) {
-    if (onRandomBreed != null) {
-      return onRandomBreed(randomResponse);
+    if (onResponse != null) {
+      return onResponse(upcomingMoviesResponse);
     }
     return orElse();
   }
@@ -591,10 +574,9 @@ class _$RandomBreedImpl implements RandomBreed {
     required TResult Function(initial value) initial,
     required TResult Function(showloading value) loading,
     required TResult Function(showError value) onError,
-    required TResult Function(RandomBreed value) onRandomBreed,
-    required TResult Function(BreedList value) onBreedList,
+    required TResult Function(onResponse value) onResponse,
   }) {
-    return onRandomBreed(this);
+    return onResponse(this);
   }
 
   @override
@@ -603,10 +585,9 @@ class _$RandomBreedImpl implements RandomBreed {
     TResult? Function(initial value)? initial,
     TResult? Function(showloading value)? loading,
     TResult? Function(showError value)? onError,
-    TResult? Function(RandomBreed value)? onRandomBreed,
-    TResult? Function(BreedList value)? onBreedList,
+    TResult? Function(onResponse value)? onResponse,
   }) {
-    return onRandomBreed?.call(this);
+    return onResponse?.call(this);
   }
 
   @override
@@ -615,175 +596,22 @@ class _$RandomBreedImpl implements RandomBreed {
     TResult Function(initial value)? initial,
     TResult Function(showloading value)? loading,
     TResult Function(showError value)? onError,
-    TResult Function(RandomBreed value)? onRandomBreed,
-    TResult Function(BreedList value)? onBreedList,
+    TResult Function(onResponse value)? onResponse,
     required TResult orElse(),
   }) {
-    if (onRandomBreed != null) {
-      return onRandomBreed(this);
+    if (onResponse != null) {
+      return onResponse(this);
     }
     return orElse();
   }
 }
 
-abstract class RandomBreed implements HomeScreenStates {
-  const factory RandomBreed(final RandomResponse randomResponse) =
-      _$RandomBreedImpl;
+abstract class onResponse implements HomeScreenStates {
+  const factory onResponse(
+      final UpcomingMoviesResponse upcomingMoviesResponse) = _$onResponseImpl;
 
-  RandomResponse get randomResponse;
+  UpcomingMoviesResponse get upcomingMoviesResponse;
   @JsonKey(ignore: true)
-  _$$RandomBreedImplCopyWith<_$RandomBreedImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$BreedListImplCopyWith<$Res> {
-  factory _$$BreedListImplCopyWith(
-          _$BreedListImpl value, $Res Function(_$BreedListImpl) then) =
-      __$$BreedListImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({BreedResponse breedResponse});
-}
-
-/// @nodoc
-class __$$BreedListImplCopyWithImpl<$Res>
-    extends _$HomeScreenStatesCopyWithImpl<$Res, _$BreedListImpl>
-    implements _$$BreedListImplCopyWith<$Res> {
-  __$$BreedListImplCopyWithImpl(
-      _$BreedListImpl _value, $Res Function(_$BreedListImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? breedResponse = null,
-  }) {
-    return _then(_$BreedListImpl(
-      null == breedResponse
-          ? _value.breedResponse
-          : breedResponse // ignore: cast_nullable_to_non_nullable
-              as BreedResponse,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$BreedListImpl implements BreedList {
-  const _$BreedListImpl(this.breedResponse);
-
-  @override
-  final BreedResponse breedResponse;
-
-  @override
-  String toString() {
-    return 'HomeScreenStates.onBreedList(breedResponse: $breedResponse)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$BreedListImpl &&
-            (identical(other.breedResponse, breedResponse) ||
-                other.breedResponse == breedResponse));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, breedResponse);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$BreedListImplCopyWith<_$BreedListImpl> get copyWith =>
-      __$$BreedListImplCopyWithImpl<_$BreedListImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loading,
-    required TResult Function(String? error) onError,
-    required TResult Function(RandomResponse randomResponse) onRandomBreed,
-    required TResult Function(BreedResponse breedResponse) onBreedList,
-  }) {
-    return onBreedList(breedResponse);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loading,
-    TResult? Function(String? error)? onError,
-    TResult? Function(RandomResponse randomResponse)? onRandomBreed,
-    TResult? Function(BreedResponse breedResponse)? onBreedList,
-  }) {
-    return onBreedList?.call(breedResponse);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loading,
-    TResult Function(String? error)? onError,
-    TResult Function(RandomResponse randomResponse)? onRandomBreed,
-    TResult Function(BreedResponse breedResponse)? onBreedList,
-    required TResult orElse(),
-  }) {
-    if (onBreedList != null) {
-      return onBreedList(breedResponse);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(initial value) initial,
-    required TResult Function(showloading value) loading,
-    required TResult Function(showError value) onError,
-    required TResult Function(RandomBreed value) onRandomBreed,
-    required TResult Function(BreedList value) onBreedList,
-  }) {
-    return onBreedList(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(initial value)? initial,
-    TResult? Function(showloading value)? loading,
-    TResult? Function(showError value)? onError,
-    TResult? Function(RandomBreed value)? onRandomBreed,
-    TResult? Function(BreedList value)? onBreedList,
-  }) {
-    return onBreedList?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(initial value)? initial,
-    TResult Function(showloading value)? loading,
-    TResult Function(showError value)? onError,
-    TResult Function(RandomBreed value)? onRandomBreed,
-    TResult Function(BreedList value)? onBreedList,
-    required TResult orElse(),
-  }) {
-    if (onBreedList != null) {
-      return onBreedList(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class BreedList implements HomeScreenStates {
-  const factory BreedList(final BreedResponse breedResponse) = _$BreedListImpl;
-
-  BreedResponse get breedResponse;
-  @JsonKey(ignore: true)
-  _$$BreedListImplCopyWith<_$BreedListImpl> get copyWith =>
+  _$$onResponseImplCopyWith<_$onResponseImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

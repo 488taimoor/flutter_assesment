@@ -58,7 +58,7 @@ class _SplashScreenState extends State<SplashScreen> {
   _initSplashScreen() async {
     Future.delayed(const Duration(seconds: 3), () async {
 
-      context.go(PagePath.home);
+      context.go(PagePath.dashboard);
     });
   }
 

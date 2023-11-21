@@ -1,5 +1,5 @@
 {
-  "appName": "Deliveristo",
+  "appName": "TenTwenty",
   "landingPageTopText": "Your all tests are in one place",
   "landingPageBottomText": "Discover, Subscribe, Manage",
    "enter_first_name": "Please enter first name",
@@ -15,5 +15,6 @@
     "please_enter_email": "Please enter Email address",
     "please_enter_password": "Please enter password",
     "invalid_email_address": "Invalid email address",
-    "invalid_password": "Invalid Password"
+    "invalid_password": "Invalid Password",
+    "dashboard":"Dashboard"
 }
