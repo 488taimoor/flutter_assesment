@@ -20,7 +20,7 @@ A fitness tracking application built with Flutter, featuring workout tracking, c
 
 ## App Video
 
-<!-- Add video link here -->
+[Watch App Demo Video](https://youtu.be/81Fk-SePPQc)
 
 ---
 
