@@ -1,33 +1,39 @@
 import 'package:flutter/material.dart';
 
-class AppCard extends StatefulWidget {
-  final double borderRadius;
-  final Widget child;
-  final VoidCallback onPressed;
+import '../../app/theme/app_colors.dart';
+import '../../core/constants/app_spacing.dart';
 
+/// Reusable dark card container matching the Figma design.
+///
+/// Used by calories, weight, hydration, and workout cards
+/// for a consistent look and feel.
+class AppCard extends StatelessWidget {
   const AppCard({
     super.key,
-    this.borderRadius = 4,
-    this.child = const Text(""),
-    required this.onPressed,
+    required this.child,
+    this.padding,
+    this.color,
+    this.width,
+    this.height,
   });
 
-  @override
-  State<AppCard> createState() => _AppCardState();
-}
+  final Widget child;
+  final EdgeInsetsGeometry? padding;
+  final Color? color;
+  final double? width;
+  final double? height;
 
-class _AppCardState extends State<AppCard> {
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: widget.onPressed,
-      child: Card(
-        elevation: 4.0,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(widget.borderRadius),
-        ),
-        child: widget.child,
+    return Container(
+      width: width,
+      height: height,
+      padding: padding ?? const EdgeInsets.all(AppSpacing.lg),
+      decoration: BoxDecoration(
+        color: color ?? AppColors.card,
+        borderRadius: BorderRadius.circular(AppSpacing.cardRadius),
       ),
+      child: child,
     );
   }
 }
