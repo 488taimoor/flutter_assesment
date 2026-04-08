@@ -120,3 +120,56 @@ lib/
 | `features/plan/` | Training Calendar tab: weekly schedule with drag & drop |
 | `features/mood/` | Mood tab: circular mood wheel with draggable selector |
 | `l10n/` | ARB localization files (English + Arabic) |
+
+---
+
+## Architecture & Design Notes
+
+### Clean Architecture (Suggested for Production)
+
+This project follows a **feature-first** structure with clear separation of concerns. For a production-scale app, the recommended Clean Architecture would extend each feature into three distinct layers:
+
+```
+features/
+└── feature_name/
+    ├── data/                    # Data Layer
+    │   ├── data_sources/        # Remote (API) & Local (DB/Cache) data sources
+    │   ├── models/              # Data Transfer Objects (DTOs) with serialization
+    │   └── repositories/        # Repository implementations
+    │
+    ├── domain/                  # Domain Layer (Pure Dart, no Flutter imports)
+    │   ├── entities/            # Business objects (no serialization logic)
+    │   ├── repositories/        # Abstract repository contracts (interfaces)
+    │   └── use_cases/           # Single-responsibility business logic units
+    │
+    └── presentation/            # Presentation Layer
+        ├── providers/           # State management (Provider/ChangeNotifier)
+        ├── screens/             # Full-page widgets
+        └── widgets/             # Reusable feature-specific UI components
+```
+
+### Key Architecture Principles
+
+| Principle | Description |
+|-----------|-------------|
+| **Dependency Rule** | Dependencies point inward: `Presentation -> Domain <- Data`. The domain layer has zero dependencies on Flutter or external packages. |
+| **Repository Pattern** | Domain defines abstract contracts; Data layer provides concrete implementations. This enables easy swapping of data sources (API, mock, local DB). |
+| **Use Cases** | Each business action is encapsulated in a single use case class with one public method (`call()`), keeping logic testable and reusable. |
+| **Feature Isolation** | Each feature is self-contained with its own models, state, and UI. Features communicate through shared domain entities, not direct widget references. |
+| **Single Source of Truth** | State flows unidirectionally: Data Source -> Repository -> Use Case -> Provider -> UI. No direct API calls from widgets. |
+
+### Why This Structure Matters
+
+- **Testability** — Domain logic can be unit tested without Flutter; UI can be widget tested with mock repositories.
+- **Scalability** — New features are added as new folders without touching existing code.
+- **Team Collaboration** — Developers can work on separate features in parallel without merge conflicts.
+- **Maintainability** — Changing a data source (e.g., REST to GraphQL) only affects the data layer; domain and presentation remain untouched.
+
+### Current Implementation Notes
+
+In this assessment, the architecture is simplified for scope:
+- **Models** serve as both entities and DTOs (no separate domain entities).
+- **Providers** contain business logic directly (no separate use cases).
+- **Data is mocked** inline in providers rather than coming from repository implementations.
+
+In a production app, these would be separated into proper layers with dependency injection (e.g., `get_it` + `injectable`) and repository contracts.
