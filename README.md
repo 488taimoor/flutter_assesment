@@ -8,7 +8,7 @@ A fitness tracking application built with Flutter, featuring workout tracking, c
 
 ## App APK
 
-[Download APK](https://github.com/488taimoor/flutter_assesment/releases/download/v1.0/app-release.apk)
+[Download APK](https://github.com/488taimoor/flutter_assesment/app-release.apk)
 
 ---
 
